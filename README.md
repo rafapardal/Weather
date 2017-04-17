@@ -21,6 +21,7 @@
 | eslint-plugin-react | Dependencias para usar es6 |
 
 
+<br/> 
 
 
 ### Pastas
@@ -31,6 +32,7 @@
 | dist/ | ficheiros gerados |
 
 
+<br/> 
 
 
 ### Esquema de pastas SCSS
@@ -64,6 +66,7 @@
 | structure | _footer | footer das páginas |
 
 
+<br/> 
 
 
 ### To Run
