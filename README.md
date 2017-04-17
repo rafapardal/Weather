@@ -12,6 +12,7 @@
 | gulp-imagemin | Images optimizer|
 | browser-sync | Live reload |
 
+
 | Dependencias uteis | uso |
 | ------ | ------ |
 | eslint-config-airbnb | eslint com estilo do airbnb |
@@ -20,12 +21,16 @@
 | eslint-plugin-react | Dependencias para usar es6 |
 
 
+
+
 ### Pastas
 
 | Nome | uso |
 | ------ | ------ |
 | src/ | Ficheiros editaveis |
 | dist/ | ficheiros gerados |
+
+
 
 
 ### Esquema de pastas SCSS
@@ -40,6 +45,7 @@
 | pages/ | estilos especificos de uma página ou secção |
 | structure/ | elementos estruturais (eg: main header & footer) |
 | vendor/ | tudo o que são estilos de terceiros |  |
+
 
 ### Esquema de ficheiros do SCSS
 
@@ -56,6 +62,8 @@
 | page | _nome_da_secção | cada página ou secção terá o seu ficheiro |
 | structure | _header | header das páginas |
 | structure | _footer | footer das páginas |
+
+
 
 
 ### To Run
