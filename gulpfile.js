@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const uglify = require('gulp-uglify');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
@@ -12,8 +13,17 @@ gulp.task('css', () => {
         .pipe(autoprefixer({
             browsers: ['last 2 versions'], // prefix para browsers antigos ou MS
         }))
-        .pipe(sourcemaps.write('.maps')) // cria o ficheiro de erro
+        .pipe(sourcemaps.write('.maps', { addComment: false })) // cria o ficheiro de erro
         .pipe(gulp.dest('dist/css')) // coloca os ficheiros css nesta pasta
+        .pipe(browserSync.stream()); // fazer refresh na página depois do ficheiro ser atualizado
+});
+
+gulp.task('js', () => {
+    return gulp.src('src/js/**/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(sourcemaps.write('.maps', { addComment: false })) // cria o ficheiro de erro
+        .pipe(gulp.dest('dist/js')) // coloca os ficheiros css nesta pasta
         .pipe(browserSync.stream()); // fazer refresh na página depois do ficheiro ser atualizado
 });
 
@@ -37,7 +47,8 @@ gulp.task('browserSync', () => {
     });
 });
 
-gulp.task('watch', ['browserSync', 'css'], () => {
+gulp.task('watch', ['browserSync', 'css', 'copy', 'js'], () => {
     gulp.watch('src/sass/**/*scss', ['css']);
+    gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/*.html', ['copy']);
 });
