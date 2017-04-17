@@ -1,4 +1,29 @@
-.test {
-    font-size: 1em;
-    display: flex;
-}
+//
+//-- Main SCSS 
+//
+
+// Load config
+@import 'config/config';
+
+// Load mixins
+@import 'mixins/mixins_general';
+@import 'mixins/mixins_breakpoints';
+@import 'mixins/mixins_grid';
+
+// Load Base
+@import 'base/reset';
+@import 'base/helper_classes';
+@import 'base/typography';
+
+// Load structure
+@import 'structure/header';
+@import 'structure/footer';
+
+// Load modules
+@import 'modules/grids';
+
+// Load pages
+//@import 'pages/';
+
+// Load vendor
+//@import 'vendor/';
