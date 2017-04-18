@@ -7,8 +7,6 @@
 
 // Load mixins
 @import 'mixins/mixins_general';
-@import 'mixins/mixins_breakpoints';
-@import 'mixins/mixins_grid';
 
 // Load Base
 @import 'base/reset';
@@ -24,6 +22,3 @@
 
 // Load pages
 //@import 'pages/';
-
-// Load vendor
-//@import 'vendor/';

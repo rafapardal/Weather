@@ -1,0 +1,13 @@
+//
+//-- typography
+//
+
+html, body {
+    background: $color-background;
+    color: $color-base;
+}
+
+body, input, select, textarea, button {
+    font-family: $base-font;
+    font-size: 100%;
+}

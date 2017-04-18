@@ -8,7 +8,8 @@
 | gulp-sass | Sass para gulp escrito em C |
 | gulp-uglify | Minify JavaScript with UglifyJS2 |
 | gulp-sourcemaps | Library para os erros de css darem na mesma linha e ficheiro que o SCSS |
-| gulp-autoprefixer | Ajuda nos prefixes para todos os browsers |
+| postcss | Ajuda nos prefixes para todos os browsers |
+| autoprefixer | Ajuda nos prefixes para todos os browsers |
 | gulp-imagemin | Images optimizer|
 | browser-sync | Live reload |
 
@@ -75,3 +76,28 @@
 $ npm install
 $ gulp watch
 ```
+
+<br/>
+
+
+### Testes
+
+```sh
+$ tmi site-url --verbose
+```
+
+
+<br/>
+
+
+### Mais plugins gulp
+
+#### https://github.com/Pestov/essential-gulp-plugins
+
+
+<br/>
+
+
+### CSS Grid
+
+#### http://gridlex.devlint.fr/
