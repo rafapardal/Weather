@@ -1,0 +1,75 @@
+//
+//-- Days
+//
+
+.weather-days {
+    background-color: #fff;
+    border-radius: 0 0 50px 50px;
+}
+
+.weather-days:before {
+    position: absolute;
+    margin-top: -100px;
+
+    height: 100px;
+    width: $width-design;
+
+    background: url('../img/clouds.png') transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: '';
+}
+
+.weather-days__names {
+    margin: 0 2em 1.9em;
+
+    color: $color-days;
+
+    cursor: pointer;
+}
+
+.weather-days__name {
+    margin-right: 2em;
+    padding-bottom: 0.2em;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.weather-days__name--active,
+.weather-days__name:hover {
+    color: $color-days-active;
+
+    border-bottom: 2px solid $color-days-active;
+}
+
+.weather-days__hours {
+    margin: auto 0.5em;
+    padding-bottom: 1em;
+
+    color: $color-days-active;
+}
+
+.weather-days__col {
+    text-align: center
+}
+
+.weather-days__hour {
+
+    font-size: 12px;
+    color: #666;
+}
+
+.weather-days__icon {
+    margin: 0.17em auto;
+
+    font-size: 35px;
+    color: $color-days-active;
+}
+
+.weather-days__degrees {
+    font-size: 12px;
+    font-weight: 600;
+    color: $color-days-active;
+}

@@ -1,0 +1,34 @@
+//
+//-- Info 
+//
+
+.weather-info {
+    height: 67vh;
+
+    color: $color-info;
+    text-align: center;
+
+    background-color: $background-day;
+    border-radius: 50px 50px 0 0;
+}
+
+.weather-info__grid {
+    padding: 8vh 0;
+}
+
+.weather-info__col {
+    display: inline-block;
+    width: 100%;
+}
+
+.weather-info__col--icon {
+    padding: 2vh 0;
+}
+
+.weather-info__col--icon > i {
+    font-size: 80px;
+}
+
+.weather-info__temperature > span{
+    font-weight: 400;
+}

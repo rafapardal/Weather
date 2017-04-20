@@ -41,6 +41,12 @@ gulp.task('copy', () => {
         .pipe(browserSync.stream()); // fazer refresh na página depois do ficheiro ser atualizado
 });
 
+gulp.task('copyAll', () => {
+    return gulp.src('src/sass/vendor/**/*.{css,eot,svg,ttf,woff,woff2}')
+        .pipe(gulp.dest('dist/css/vendor'))
+        .pipe(browserSync.stream());
+});
+
 gulp.task('browserSync', () => {
     browserSync.init({
         server: {
@@ -49,7 +55,7 @@ gulp.task('browserSync', () => {
     });
 });
 
-gulp.task('watch', ['browserSync', 'css', 'copy', 'js'], () => {
+gulp.task('watch', ['browserSync', 'css', 'copy', 'js', 'copyAll'], () => {
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/sass/**/*scss', ['css']);
     gulp.watch('src/*.html', ['copy']);

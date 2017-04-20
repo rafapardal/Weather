@@ -14,8 +14,9 @@
 @import 'base/typography';
 
 // Load structure
-@import 'structure/header';
-@import 'structure/footer';
+@import 'structure/sections';
+@import 'structure/info';
+@import 'structure/days';
 
 // Load modules
 @import 'modules/grids';
