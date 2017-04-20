@@ -30,9 +30,9 @@ gulp.task('js', () => {
 });
 
 gulp.task('images', () => {
-    return gulp.src('src/images/*')
+    return gulp.src('src/img/*')
         .pipe(imagemin()) // minifica as imagens
-        .pipe(gulp.dest('dist/images'));
+        .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('copy', () => {
@@ -55,7 +55,7 @@ gulp.task('browserSync', () => {
     });
 });
 
-gulp.task('watch', ['browserSync', 'css', 'copy', 'js', 'copyAll'], () => {
+gulp.task('watch', ['browserSync', 'js', 'css', 'images', 'copyAll'], () => {
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/sass/**/*scss', ['css']);
     gulp.watch('src/*.html', ['copy']);

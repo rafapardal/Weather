@@ -13,7 +13,7 @@
     </head>
     <body> 
         <section class="app-showcase">
-            <section class="weather-info">
+            <section id="weather-info" class="weather-info weather-info--day">
                 <div class="weather-info__grid grid">
                     <div class="weather-info__col weather-info__col--description col">
                         <h2 class="weather-info__station">Sunny</h2>
@@ -29,45 +29,80 @@
             </section>
             <section class="weather-days">
                 <div class="weather-days__names grid">
-                    <div class="weather-days__name weather-days__name--today weather-days__name--active col">
+                    <div class="weather-days__name weather-days__name--today weather-days__name--active col" data-order="0">
                         Today
                     </div>
-                    <div class="weather-days__name weather-days__name--tomorrow col">
+                    <div class="weather-days__name weather-days__name--tomorrow col" data-order="1">
                         Tomorrow
                     </div>
                 </div>
-
-                <div class="weather-days__hours grid-spaceAround">
-                    <div class="weather-days__col col-2">
-                        <div class="weather-days__hour">11am</div>
-                        <div class="weather-days__icon">
-                            <i class="wi wi-day-cloudy"></i>
+                
+                <div id="weather-days__wrapper" class="weather-days__wrapper">
+                    <div class="weather-days__hours weather-days__today grid-spaceAround">
+                        <div class="weather-days__col col-2">
+                            <div class="weather-days__hour">11am</div>
+                            <div class="weather-days__icon">
+                                <i class="wi wi-day-cloudy"></i>
+                            </div>
+                            <div class="weather-days__degrees">22º</div>
                         </div>
-                        <div class="weather-days__degrees">22º</div>
+                        <div class="weather-days__col col-2">
+                            <div class="weather-days__hour">12am</div>
+                            <div class="weather-days__icon">
+                                <i class="wi wi-day-cloudy"></i>
+                            </div>
+                            <div class="weather-days__degrees">23º</div>
+                        </div>
+                        <div class="weather-days__col col-2">
+                            <div class="weather-days__hour">01pm</div>
+                            <div class="weather-days__icon">
+                                <i class="wi wi-day-hail"></i>
+                            </div>
+                            <div class="weather-days__degrees">25º</div>
+                        </div>
+                        <div class="weather-days__col col-2">
+                            <div class="weather-days__hour">02pm</div>
+                            <div class="weather-days__icon">
+                                <i class="wi wi-day-rain"></i>
+                            </div>
+                            <div class="weather-days__degrees">27º</div>
+                        </div>
                     </div>
-                    <div class="weather-days__col col-2">
-                        <div class="weather-days__hour">12am</div>
-                        <div class="weather-days__icon">
-                            <i class="wi wi-day-cloudy"></i>
+                    <div class="weather-days__hours weather-days__today grid-spaceAround">
+                        <div class="weather-days__col col-2">
+                            <div class="weather-days__hour">11am</div>
+                            <div class="weather-days__icon">
+                                <i class="wi wi-day-cloudy"></i>
+                            </div>
+                            <div class="weather-days__degrees">22º</div>
                         </div>
-                        <div class="weather-days__degrees">23º</div>
-                    </div>
-                    <div class="weather-days__col col-2">
-                        <div class="weather-days__hour">01pm</div>
-                        <div class="weather-days__icon">
-                            <i class="wi wi-day-hail"></i>
+                        <div class="weather-days__col col-2">
+                            <div class="weather-days__hour">12am</div>
+                            <div class="weather-days__icon">
+                                <i class="wi wi-day-cloudy"></i>
+                            </div>
+                            <div class="weather-days__degrees">23º</div>
                         </div>
-                        <div class="weather-days__degrees">25º</div>
-                    </div>
-                    <div class="weather-days__col col-2">
-                        <div class="weather-days__hour">02pm</div>
-                        <div class="weather-days__icon">
-                            <i class="wi wi-day-rain"></i>
+                        <div class="weather-days__col col-2">
+                            <div class="weather-days__hour">01pm</div>
+                            <div class="weather-days__icon">
+                                <i class="wi wi-day-hail"></i>
+                            </div>
+                            <div class="weather-days__degrees">25º</div>
                         </div>
-                        <div class="weather-days__degrees">27º</div>
+                        <div class="weather-days__col col-2">
+                            <div class="weather-days__hour">02pm</div>
+                            <div class="weather-days__icon">
+                                <i class="wi wi-day-rain"></i>
+                            </div>
+                            <div class="weather-days__degrees">27º</div>
+                        </div>
                     </div>
                 </div>
+
             </section>
         </section>
+
+        <script src="js/carousel.js"></script>
     </body>
 </html>

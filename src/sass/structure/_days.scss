@@ -3,6 +3,8 @@
 //
 
 .weather-days {
+    overflow: hidden;
+
     background-color: #fff;
     border-radius: 0 0 50px 50px;
 }
@@ -33,8 +35,12 @@
     margin-right: 2em;
     padding-bottom: 0.2em;
 
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 700;
+
+    border-bottom: 2px solid transparent;
+
+    transition: transform 0.1s;
 }
 
 .weather-days__name--active,
@@ -42,23 +48,43 @@
     color: $color-days-active;
 
     border-bottom: 2px solid $color-days-active;
+
+    transform: scale(1.2);
+}
+
+.weather-days__wrapper {
+    display: inline-flex;
+    
+    margin: 0;
+
+    transition: margin 0.7s;
 }
 
 .weather-days__hours {
-    margin: auto 0.5em;
+    min-width: 390px;
+
+    margin: auto 5px;
     padding-bottom: 1em;
 
     color: $color-days-active;
 }
 
 .weather-days__col {
-    text-align: center
+    text-align: center;
+
+    cursor: pointer;
+    transition: transform 0.1s;
 }
 
 .weather-days__hour {
 
     font-size: 12px;
     color: #666;
+}
+
+.weather-days__col:hover {
+
+    transform: scale(1.4);
 }
 
 .weather-days__icon {

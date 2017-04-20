@@ -3,13 +3,22 @@
 //
 
 .weather-info {
-    height: 67vh;
+    height: 63vh;
 
     color: $color-info;
     text-align: center;
 
-    background-color: $background-day;
     border-radius: 50px 50px 0 0;
+
+    transition: background-color 0.7s
+}
+
+.weather-info--day {
+    background-color: $background-day;
+}
+
+.weather-info--night {
+    background-color: $background-night;
 }
 
 .weather-info__grid {
