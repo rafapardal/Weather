@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.js"],"names":["newTest","anotherTest"],"mappings":"AAAA,KAAMA,UAAU,EACVC,aAAc","file":"../test.js","sourcesContent":["const newTest = false;\nconst anotherTest = true;\n"]}
